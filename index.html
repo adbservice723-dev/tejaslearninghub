@@ -3,9 +3,286 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eef5ff">
 
 <title>TRADE WITHT TEJAS(OFFICIAL)</title>
 <meta name="description" content="Join Gautam Kumar Jha Official Telegram community for stock market educational content.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+  background:linear-gradient(145deg,#eaf2ff 0%,#ffffff 52%,#edf5ff 100%);
+  color:#17233d;
+  font-family:Arial,Segoe UI,sans-serif;
+}
+
+.container{
+  width:100%;
+  max-width:410px;
+  margin:auto;
+  padding:18px 17px 14px;
+  text-align:center;
+  background:rgba(255,255,255,.94);
+  border:1px solid #e5edf9;
+  border-radius:20px;
+  box-shadow:0 12px 35px rgba(32,76,140,.10);
+}
+
+/* HEADER */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-bottom:13px;
+}
+
+.brand{
+  color:#18345f;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.65px;
+  text-align:left;
+}
+
+.dot{
+  display:inline-block;
+  width:7px;
+  height:7px;
+  margin-right:5px;
+  border-radius:50%;
+  background:#20bd69;
+  box-shadow:0 0 7px rgba(32,189,105,.45);
+}
+
+.badge{
+  padding:5px 10px;
+  border:1px solid #b9d8ff;
+  border-radius:30px;
+  color:#1766c5;
+  background:#eff6ff;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.5px;
+}
+
+/* PROFILE */
+.profile{
+  width:106px;
+  height:84px;
+  margin:0 auto 11px;
+  overflow:hidden;
+  border:3px solid #fff;
+  border-radius:15px;
+  background:#edf4ff;
+  box-shadow:0 5px 17px rgba(31,94,177,.17);
+}
+
+.profile img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* MAIN CONTENT */
+.tag{
+  margin-bottom:7px;
+  color:#176bd2;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1.8px;
+}
+
+h1{
+  margin-bottom:8px;
+  color:#18345f;
+  font-size:clamp(25px,7vw,32px);
+  font-weight:900;
+  line-height:1.08;
+}
+
+h1 span{
+  display:block;
+  color:#1472e8;
+}
+
+.description{
+  max-width:340px;
+  margin:0 auto 12px;
+  color:#718096;
+  font-size:11px;
+  line-height:1.5;
+}
+
+/* COUNTDOWN */
+.countdown{
+  max-width:250px;
+  margin:9px auto 11px;
+  padding:9px 10px;
+  border:1px solid #c8defb;
+  border-radius:11px;
+  background:#f1f7ff;
+  color:#65758d;
+  font-size:10px;
+  line-height:1.4;
+}
+
+.countdown strong{
+  display:block;
+  margin-top:2px;
+  color:#176bd2;
+  font-size:20px;
+  font-weight:900;
+  font-variant-numeric:tabular-nums;
+}
+
+/* TELEGRAM BUTTON */
+.telegram-btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  width:100%;
+  min-height:48px;
+  padding:13px 9px;
+  border-radius:12px;
+  background:linear-gradient(115deg,#2388f4,#0754c5);
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:900;
+  box-shadow:0 6px 17px rgba(24,105,213,.23);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+
+.telegram-btn:active{
+  transform:scale(.98);
+  box-shadow:0 3px 10px rgba(24,105,213,.18);
+}
+
+.telegram-btn svg{
+  width:20px;
+  height:20px;
+  fill:#fff;
+  flex-shrink:0;
+}
+
+/* QUICK HIGHLIGHTS */
+.features{
+  display:flex;
+  justify-content:space-around;
+  gap:5px;
+  margin:12px 0;
+  padding:10px 5px;
+  border:1px solid #e1ecfb;
+  border-radius:12px;
+  background:#f5f9ff;
+}
+
+.feature{
+  flex:1;
+  color:#738198;
+  font-size:9px;
+  line-height:1.5;
+}
+
+.feature strong{
+  display:block;
+  margin-bottom:1px;
+  color:#176bd2;
+  font-size:11px;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+  margin-bottom:11px;
+  padding:10px;
+  border:1px solid #e3eaf4;
+  border-radius:10px;
+  background:#f8faff;
+  color:#758196;
+  font-size:8.5px;
+  line-height:1.5;
+  text-align:left;
+}
+
+.disclaimer strong{
+  display:block;
+  margin-bottom:3px;
+  color:#b77913;
+  font-size:9px;
+}
+
+/* FOOTER */
+.footer{
+  padding-top:9px;
+  border-top:1px solid #e5edf7;
+  color:#8995a7;
+  font-size:8px;
+  line-height:1.5;
+}
+
+.agency-credit{
+  margin-top:5px;
+  color:#78869b;
+  font-size:10px;
+  letter-spacing:.3px;
+}
+
+.agency-credit a{
+  color:#176bd2;
+  font-weight:900;
+  text-decoration:none;
+}
+
+/* COMPACT MOBILE SCREENS */
+@media(max-height:700px){
+  body{padding:8px 12px;}
+  .container{padding:13px 15px 11px;}
+  .topbar{margin-bottom:8px;}
+  .profile{width:88px;height:68px;margin-bottom:7px;}
+  .tag{margin-bottom:4px;font-size:8px;}
+  h1{font-size:25px;margin-bottom:5px;}
+  .description{font-size:10px;line-height:1.35;margin-bottom:7px;}
+  .countdown{margin:6px auto 8px;padding:7px;}
+  .countdown strong{font-size:18px;}
+  .telegram-btn{min-height:43px;padding:10px;font-size:12px;}
+  .features{margin:8px 0;padding:7px 4px;}
+  .disclaimer{padding:8px;font-size:8px;line-height:1.35;margin-bottom:7px;}
+  .footer{padding-top:6px;font-size:7px;}
+  .agency-credit{margin-top:3px;font-size:9px;}
+}
+
+@media(max-width:360px){
+  body{padding:7px;}
+  .container{padding:12px 11px;}
+  .profile{width:82px;height:64px;}
+  h1{font-size:24px;}
+  .description{font-size:10px;}
+  .telegram-btn{font-size:11px;}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .telegram-btn{transition:none;}
+}
+</style>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -22,487 +299,177 @@ fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1676390137427793&ev=PageView&noscript=1"
-/></noscript>
+alt=""></noscript>
 <!-- End Meta Pixel Code -->
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    min-height: 100%;
-}
-
-body {
-    background: #030805;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.container {
-    width: 100%;
-    max-width: 390px;
-    margin: auto;
-    text-align: center;
-}
-
-/* HEADER */
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 9px;
-}
-
-.brand {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: .7px;
-}
-
-.dot {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background: #22c55e;
-    border-radius: 50%;
-    margin-right: 5px;
-    box-shadow: 0 0 8px #22c55e;
-}
-
-.badge {
-    color: #4ade80;
-    font-size: 9px;
-    border: 1px solid #225b38;
-    padding: 5px 10px;
-    border-radius: 30px;
-}
-
-/* LOGO */
-
-.profile {
-    width: 115px;
-    height: 90px;
-    margin: 0 auto 9px;
-    border: 1px solid #173522;
-    border-radius: 13px;
-    overflow: hidden;
-    background: #000;
-}
-
-.profile img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-/* CONTENT */
-
-.tag {
-    color: #4ade80;
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 6px;
-}
-
-h1 {
-    font-size: clamp(25px, 7vw, 32px);
-    font-weight: 900;
-    line-height: 1.08;
-    margin-bottom: 8px;
-}
-
-h1 span {
-    display: block;
-    color: #22c55e;
-}
-
-.description {
-    color: #9ca3af;
-    font-size: 11px;
-    line-height: 1.45;
-    max-width: 340px;
-    margin: 0 auto 11px;
-}
-
-/* TELEGRAM BUTTON */
-
-.telegram-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 13px 8px;
-    background: linear-gradient(135deg,#86efac,#22c55e);
-    color: #001b09;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 900;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(34,197,94,.3);
-}
-
-.telegram-btn:active {
-    transform: scale(.97);
-}
-
-.telegram-btn svg {
-    width: 20px;
-    height: 20px;
-    fill: #001b09;
-    flex-shrink: 0;
-}
-
-/* FEATURES */
-
-.features {
-    display: flex;
-    justify-content: space-around;
-    margin: 11px 0;
-    padding: 9px 4px;
-    background: #09140d;
-    border: 1px solid #142b1b;
-    border-radius: 11px;
-}
-
-.feature {
-    font-size: 9px;
-    color: #9ca3af;
-    line-height: 1.5;
-}
-
-.feature strong {
-    display: block;
-    color: #4ade80;
-    font-size: 11px;
-}
-
-/* DISCLAIMER */
-
-.disclaimer {
-    background: #0b100d;
-    border: 1px solid #202c23;
-    border-radius: 9px;
-    padding: 9px;
-    color: #9ca3af;
-    font-size: 8.5px;
-    line-height: 1.45;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.disclaimer strong {
-    color: #facc15;
-    font-size: 9px;
-}
-
-/* FOOTER */
-
-.footer {
-    border-top: 1px solid #1b2920;
-    padding-top: 8px;
-    color: #6b7280;
-    font-size: 8px;
-    line-height: 1.5;
-}
-
-.agency-credit {
-    margin-top: 5px;
-    font-size: 10px;
-    letter-spacing: .5px;
-}
-
-.agency-credit a {
-    color: #4ade80;
-    text-decoration: none;
-    font-weight: 900;
-}
-
-/* SHORT MOBILE SCREENS */
-
-@media (max-height: 650px) {
-    body {
-        padding: 5px 10px;
-    }
-
-    .topbar {
-        margin-bottom: 5px;
-    }
-
-    .profile {
-        width: 85px;
-        height: 65px;
-        margin-bottom: 5px;
-    }
-
-    .tag {
-        margin-bottom: 4px;
-        font-size: 8px;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin-bottom: 5px;
-    }
-
-    .description {
-        font-size: 10px;
-        line-height: 1.3;
-        margin-bottom: 7px;
-    }
-
-    .telegram-btn {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .features {
-        margin: 7px 0;
-        padding: 6px 3px;
-    }
-
-    .disclaimer {
-        padding: 7px;
-        font-size: 8px;
-        line-height: 1.3;
-        margin-bottom: 6px;
-    }
-
-    .footer {
-        padding-top: 5px;
-        font-size: 7px;
-    }
-
-    .agency-credit {
-        margin-top: 3px;
-        font-size: 9px;
-    }
-}
-
-/* DESKTOP */
-
-@media (min-width: 600px) {
-    .container {
-        max-width: 390px;
-    }
-}
-
-.countdown {
-    margin: 9px auto 10px;
-    padding: 8px 10px;
-    max-width: 250px;
-    border: 1px solid #225b38;
-    border-radius: 10px;
-    background: #09140d;
-    color: #9ca3af;
-    font-size: 10px;
-    line-height: 1.4;
-}
-.countdown strong {
-    display: block;
-    margin-top: 2px;
-    color: #4ade80;
-    font-size: 20px;
-    font-weight: 900;
-    font-variant-numeric: tabular-nums;
-}
-
-</style>
 </head>
 
 <body>
-
 <div class="container">
 
-    <!-- HEADER -->
-    <div class="topbar">
-        <div class="brand">
-            <span class="dot"></span>
-          TRADE WITH TEJAS 🔵
-        </div>
-
-        <div class="badge">OFFICIAL</div>
+  <!-- HEADER -->
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      TRADE WITH TEJAS 🔵
     </div>
+    <div class="badge">OFFICIAL</div>
+  </div>
 
-    <!-- LOGO -->
-    <div class="profile">
-        <img src="https://i.ibb.co/pBN7RSn9/g9-Mu-Eo-AM27-Bu-j-Eqdy1b-IG5-EZx-DWah-Yi9-AJn-GTRh-TIrb-Ia-Xohe-C3du-Jsg-PW2i-R44m2-M0-UR-ow-UOf-TQ4x-Te.jpg" alt="Gautam Kumar Jha Official Logo">
+  <!-- LOGO -->
+  <div class="profile">
+    <img
+      src="https://i.ibb.co/pBN7RSn9/g9-Mu-Eo-AM27-Bu-j-Eqdy1b-IG5-EZx-DWah-Yi9-AJn-GTRh-TIrb-Ia-Xohe-C3du-Jsg-PW2i-R44m2-M0-UR-ow-UOf-TQ4x-Te.jpg"
+      alt="Gautam Kumar Jha Official Logo"
+      fetchpriority="high">
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="tag">OFFICIAL COMMUNITY</div>
+
+  <h1>
+    Learn The Market.
+    <span>Build Your Edge.</span>
+  </h1>
+
+  <p class="description">
+    Join SUDHARSHAN Stock Learners community
+    and stay connected with stock market educational
+    content, market insights and learning resources.
+  </p>
+
+  <!-- SIX SECOND COUNTDOWN -->
+  <div class="countdown" id="countdownBox" aria-live="polite">
+    Redirecting to Telegram in
+    <strong><span id="countdown">6</span> seconds</strong>
+  </div>
+
+  <!-- TELEGRAM BUTTON -->
+  <a href="https://t.me/+I01r7NMerxY0ZGFl"
+     class="telegram-btn"
+     onclick="return trackSubscribe(event)">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12
+      12-5.37 12-12S18.63 0 12 0zm5.89 8.22l-1.97
+      9.28c-.14.66-.54.82-1.08.51l-3-2.21-1.45
+      1.39c-.14.18-.36.3-.6.3l.21-3.06 5.56-5.02
+      c.24-.21-.05-.33-.37-.12l-6.87 4.33-2.96-.93
+      c-.64-.2-.66-.64.14-.95l11.56-4.46c.54-.2
+      1.01.13.83.94z"/>
+    </svg>
+    JOIN TELEGRAM COMMUNITY ➜
+  </a>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="feature">
+      <strong>FREE</strong>
+      Community
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="tag">OFFICIAL COMMUNITY</div>
-
-    <h1>
-        Learn The Market.
-        <span>Build Your Edge.</span>
-    </h1>
-
-    <p class="description">
-        Join SUDHARSHAN  Stock Learners community
-        and stay connected with stock market educational
-        content, market insights and learning resources.
-    </p>
-
-
-    <div class="countdown" id="countdownBox" aria-live="polite">
-        Redirecting to Telegram in
-        <strong><span id="countdown">6</span> seconds</strong>
+    <div class="feature">
+      <strong>LEARN</strong>
+      Education
     </div>
-
-    <!-- TELEGRAM BUTTON -->
-    <a href="https://t.me/+I01r7NMerxY0ZGFl"
-       class="telegram-btn"
-       onclick="trackSubscribe(event)">
-
-        <svg viewBox="0 0 24 24">
-            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12
-            12-5.37 12-12S18.63 0 12 0zm5.89 8.22l-1.97
-            9.28c-.14.66-.54.82-1.08.51l-3-2.21-1.45
-            1.39c-.14.18-.36.3-.6.3l.21-3.06 5.56-5.02
-            c.24-.21-.05-.33-.37-.12l-6.87 4.33-2.96-.93
-            c-.64-.2-.66-.64.14-.95l11.56-4.46c.54-.2
-            1.01.13.83.94z"/>
-        </svg>
-
-        JOIN TELEGRAM COMMUNITY ➜
-    </a>
-
-    <!-- FEATURES -->
-    <div class="features">
-
-        <div class="feature">
-            <strong>FREE</strong>
-            Community
-        </div>
-
-        <div class="feature">
-            <strong>LEARN</strong>
-            Education
-        </div>
-
-        <div class="feature">
-            <strong>GROW</strong>
-            Knowledge
-        </div>
-
+    <div class="feature">
+      <strong>GROW</strong>
+      Knowledge
     </div>
+  </div>
 
-    <!-- DISCLAIMER -->
-    <div class="disclaimer">
-        <strong>⚠ IMPORTANT DISCLAIMER</strong>
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <strong>⚠ IMPORTANT DISCLAIMER</strong>
+    This community is intended for educational and
+    informational purposes only. We do not provide
+    guaranteed returns or personalized investment advice.
+    Stock market investments are subject to market risks.
+    Please conduct your own research and consult a
+    qualified financial advisor before investing.
+  </div>
 
-        This community is intended for educational and
-        informational purposes only. We do not provide
-        guaranteed returns or personalized investment advice.
-        Stock market investments are subject to market risks.
-        Please conduct your own research and consult a
-        qualified financial advisor before investing.
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2026. All Rights Reserved.<br>
+    Official Stock Learners Community<br>
+    Educational Content • Market Risks Apply
+
+    <div class="agency-credit">
+      Powered By
+      <a href="https://t.me/+KMkMkqIAJvliMzM1"
+         target="_blank"
+         rel="noopener noreferrer">
+        AdNexProAgency
+      </a>
     </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2026. All Rights Reserved.
-        Official Stock Learners Community
-        Educational Content • Market Risks Apply
-
-        <div class="agency-credit">
-            Powered By
-            <a href="https://t.me/+KMkMkqIAJvliMzM1"
-               target="_blank"
-               rel="noopener noreferrer">
-                AdNexProAgency
-            </a>
-        </div>
-    </div>
+  </div>
 
 </div>
 
 <!-- META SUBSCRIBE TRACKING + 6 SECOND AUTO REDIRECT -->
 <script>
-(function () {
-    const telegramURL = "https://t.me/+I01r7NMerxY0ZGFl";
-    const countdownEl = document.getElementById("countdown");
-    const joinButton = document.querySelector(".telegram-btn");
+(function(){
+  const telegramURL = "https://t.me/+I01r7NMerxY0ZGFl";
+  const countdownEl = document.getElementById("countdown");
 
-    let secondsLeft = 6;
-    let redirectStarted = false;
-    let subscribeTracked = false;
-    let timerInterval = null;
+  let secondsLeft = 6;
+  let redirectStarted = false;
+  let subscribeTracked = false;
+  let timerInterval = null;
 
-    function redirectToTelegram() {
-        if (redirectStarted) return;
-        redirectStarted = true;
-        if (timerInterval) clearInterval(timerInterval);
-        window.location.href = telegramURL;
+  function redirectToTelegram(){
+    if(redirectStarted) return;
+    redirectStarted = true;
+    if(timerInterval) clearInterval(timerInterval);
+    window.location.href = telegramURL;
+  }
+
+  // Automatic redirect does not fire a Subscribe event.
+  timerInterval = setInterval(function(){
+    secondsLeft -= 1;
+
+    if(countdownEl){
+      countdownEl.textContent = String(Math.max(secondsLeft,0));
     }
 
-    // The automatic redirect is NOT counted as a Subscribe conversion.
-    timerInterval = setInterval(function () {
-        secondsLeft -= 1;
-        if (countdownEl) countdownEl.textContent = String(Math.max(secondsLeft, 0));
-        if (secondsLeft <= 0) redirectToTelegram();
-    }, 1000);
+    if(secondsLeft <= 0){
+      redirectToTelegram();
+    }
+  },1000);
 
-    // Subscribe is counted only after an intentional JOIN button click.
-    window.trackSubscribe = function (event) {
-        if (event) event.preventDefault();
+  // Fire Subscribe only when the visitor intentionally clicks JOIN.
+  window.trackSubscribe = function(event){
+    if(event) event.preventDefault();
 
-        if (subscribeTracked) {
-            redirectToTelegram();
-            return false;
-        }
-        subscribeTracked = true;
+    if(subscribeTracked){
+      redirectToTelegram();
+      return false;
+    }
 
-        if (joinButton) joinButton.setAttribute("aria-busy", "true");
+    subscribeTracked = true;
 
-        let redirected = false;
-        function finishRedirect() {
-            if (redirected) return;
-            redirected = true;
-            redirectToTelegram();
-        }
+    if(typeof window.fbq === "function"){
+      try{
+        window.fbq(
+          "track",
+          "Subscribe",
+          {
+            value: 1.00,
+            currency: "INR"
+          },
+          {
+            eventID: "subscribe_" + Date.now()
+          }
+        );
+      }catch(error){
+        // Continue to Telegram even if tracking fails.
+      }
+    }
 
-        // Keep the same Pixel ID and INR value from the supplied page.
-        if (typeof window.fbq === "function") {
-            try {
-                window.fbq("track", "Subscribe", {
-                    value: 1.00,
-                    currency: "INR"
-                }, {
-                    eventID: "subscribe_" + Date.now() + "_" +
-                        Math.random().toString(36).slice(2)
-                }, {
-                    eventCallback: finishRedirect,
-                    event_timeout: 1200
-                });
-            } catch (err) {
-                // Redirect still proceeds if the tracking call fails.
-            }
-            // Fallback in case the pixel callback is blocked.
-            setTimeout(finishRedirect, 1200);
-        } else {
-            finishRedirect();
-        }
-
-        return false;
-    };
+    // Briefly allow the Pixel request to start before redirecting.
+    setTimeout(redirectToTelegram,500);
+    return false;
+  };
 })();
 </script>
 
 </body>
 </html>
-
- 
